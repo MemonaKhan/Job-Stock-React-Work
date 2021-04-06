@@ -1,13 +1,12 @@
 import React from "react"
 
 import Img from "../img/can-2.png";
-const CandidateProfile = ({ img,name,position,post,like,share}) => {
+const CandidateProfile = ({ img,name,designation,post,like,share}) => {
     return (
         <>
             <section className="detail-desc advance-detail-pr gray-bg">
                 <div className="container white-shadow">
                     <div className="row">
-                        {/* <div><img src={{ img }} className="img" alt="" /></div> */}
                         <div className="detail-pic"><img src={ img } className="img" alt="" /><a href="#" className="detail-edit" title="edit"><i className="fa fa-pencil"></i></a></div>
                         <div className="detail-status"><span>Active Now</span></div>
                     </div>
@@ -15,7 +14,7 @@ const CandidateProfile = ({ img,name,position,post,like,share}) => {
                     <div className="row bottom-mrg">
                         <div className="col-md-12 col-sm-12">
                             <div className="advance-detail detail-desc-caption">
-                                <h4>{name}</h4><span className="designation">{position}</span>
+                                <h4>{name}</h4><span className="designation">{designation}</span>
                                 <ul>
                                     <li><strong className="j-view">{post}</strong>Job Post</li>
                                     <li><strong className="j-applied">{like}</strong>Job Like</li>
