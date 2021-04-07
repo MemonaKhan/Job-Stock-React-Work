@@ -8,11 +8,12 @@ import ProfilePostJob from '../components/ProfilePostJob';
 import ProfileSetting from '../components/ProfileSetting';
 
 import ClientData from '../data/client/Data'
+import JobsPosted from '../data/client/JobsPosted'
 
 export default function App() {
     return (
         <>
-          
+
             <Router>
                 <section className="full-detail-description full-detail gray-bg">
                     <div className="container">
@@ -31,21 +32,33 @@ export default function App() {
                                     <div className="tab-content">
                                         <Switch>
                                             <Route exact path="/employerProfile">
-                                                <ProfileAbout name={ClientData[0].name} desc={ClientData[0].description} />
+                                                <ProfileAbout
+                                                    name={ClientData[0].name}
+                                                    desc={ClientData[0].description} />
                                             </Route>
-                                            <Route path="/employerProfile/address">
-                                                <ProfileAddress address={ClientData[0].location.Address} city={ClientData[0].location.city} state={ClientData[0].location.state} country={ClientData[0].location.country} zip={ClientData[0].location.zip} phone={ClientData[0].phone} fax={ClientData[0].fax} email={ClientData[0].email} />
+                                            <Route exact path="/employerProfile/address">
+                                                <ProfileAddress
+                                                    address={ClientData[0].location.Address}
+                                                    city={ClientData[0].location.city}
+                                                    state={ClientData[0].location.state}
+                                                    country={ClientData[0].location.country}
+                                                    zip={ClientData[0].location.zip}
+                                                    phone={ClientData[0].phone}
+                                                    fax={ClientData[0].fax}
+                                                    email={ClientData[0].email} />
                                             </Route>
-                                            <Route path="/employerProfile/post-job">
-                                                <ProfilePostJob />
+                                            <Route exact path="/employerProfile/post-job">
+                                                <ProfilePostJob 
+
+                                                jobs={ClientData[0].jobPost}/>
                                             </Route>
-                                            <Route path="/employerProfile/friends">
+                                            <Route exact path="/employerProfile/friends">
                                                 <ProfileFriends />
                                             </Route>
-                                            <Route path="/employerProfile/messages">
+                                            <Route exact path="/employerProfile/messages">
                                                 <ProfileMessage />
                                             </Route>
-                                            <Route path="/employerProfile/settings">
+                                            <Route exact path="/employerProfile/settings">
                                                 <ProfileSetting />
                                             </Route>
                                         </Switch>

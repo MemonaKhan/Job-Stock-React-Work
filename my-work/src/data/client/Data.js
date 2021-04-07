@@ -1,4 +1,4 @@
-// import JobPosted from "./JobsPosted"
+import JobPosted from "./JobsPosted"
 
 
 
@@ -42,7 +42,7 @@ const ClientData = [
     messages:[{}],
     online:true,
     friends:[{}],
-    // jobs: JobPosted,
+    jobs: JobPosted,
     // reviews:[
     //   {
     //     clientName:"",
