@@ -39,7 +39,16 @@ const ClientData = [
         twitter: ""
       }
     ],
-    messages: [{}],
+    messages: [{
+      read:true,
+      senderemail:"theadmin@thetheme.io",
+      receiveremail:"subscriber@yahoo.com",
+      time:"07:34 AM",
+      day:"Today",
+      img:"",
+      sender:"Daniel Duke",
+      message:"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium",
+    }],
     online: true,
     friends: [{
       name: "Charles Hopman",
