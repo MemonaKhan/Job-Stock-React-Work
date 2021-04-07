@@ -59,7 +59,21 @@ export default function App() {
                                                 <ProfileMessage />
                                             </Route>
                                             <Route exact path="/employerProfile/settings">
-                                                <ProfileSetting />
+                                                <ProfileSetting 
+                                                fname={ClientData[0].fname}
+                                                mname={ClientData[0].mname}
+                                                lname={ClientData[0].lname}
+                                                address={ClientData[0].location.Address}
+                                                phone={ClientData[0].phone}
+                                                desig={ClientData[0].designation}
+                                                desc={ClientData[0].description}
+                                                email={ClientData[0].email}
+                                                zip={ClientData[0].location.zip}
+                                                state={ClientData[0].location.state}
+                                                country={ClientData[0].location.country}
+                                                city={ClientData[0].location.city}
+                                                company={ClientData[0].organization}
+                                                />
                                             </Route>
                                         </Switch>
                                     </div>

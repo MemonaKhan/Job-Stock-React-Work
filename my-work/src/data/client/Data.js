@@ -5,6 +5,9 @@ import JobPosted from "./JobsPosted"
 const ClientData = [
   {
     name: "Adam Declizer",
+    fname:"",
+    mname:"",
+    lname:"",
     designation: "CEO & Founder",
     profile: "",
     coverPhoto: "",

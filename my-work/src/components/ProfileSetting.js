@@ -1,6 +1,5 @@
 import React from "react"
-
-export default function ProfileSetting() {
+export default function ProfileSetting(props) {
     return (
         <>
             <div id="settings" class="tab-pane fade in active">
@@ -9,51 +8,51 @@ export default function ProfileSetting() {
                     <div class="edit-pro">
                         <div class="col-md-4 col-sm-6">
                             <label>First Name</label>
-                            <input type="text" class="form-control" placeholder="Matthew" />
+                            <input type="text" class="form-control" placeholder={props.fname} />
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>Middle Name</label>
-                            <input type="text" class="form-control" placeholder="Else" />
+                            <input type="text" class="form-control" placeholder={props.mname} />
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>Last Name</label>
-                            <input type="text" class="form-control" placeholder="Dana" />
+                            <input type="text" class="form-control" placeholder={props.lname} />
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>Email</label>
-                            <input type="email" class="form-control" placeholder="dana.mathew@gmail.com" />
+                            <input type="email" class="form-control" placeholder={props.email} />
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>Phone</label>
-                            <input type="text" class="form-control" placeholder="+91 258 475 6859" />
+                            <input type="text" class="form-control" placeholder={props.phone} />
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>Zip / Postal</label>
-                            <input type="text" class="form-control" placeholder="258 457 528" />
+                            <input type="text" class="form-control" placeholder={props.zip} />
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>Address</label>
-                            <input type="text" class="form-control" placeholder="204 Lowes Alley" />
+                            <input type="text" class="form-control" placeholder={props.address} />
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>Address 2</label>
-                            <input type="text" class="form-control" placeholder="Software Developer" />
+                            <input type="text" class="form-control" placeholder={props.desig} />
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>Organization</label>
-                            <input type="text" class="form-control" placeholder="Software Developer" />
+                            <input type="text" class="form-control" placeholder={props.company} />
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>City</label>
-                            <input type="text" class="form-control" placeholder="Chandigarh" />
+                            <input type="text" class="form-control" placeholder={props.city} />
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>State</label>
-                            <input type="text" class="form-control" placeholder="Punjab" />
+                            <input type="text" class="form-control" placeholder={props.state} />
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>Country</label>
-                            <input type="text" class="form-control" placeholder="India" />
+                            <input type="text" class="form-control" placeholder={props.country} />
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>Old Password</label>
@@ -69,12 +68,14 @@ export default function ProfileSetting() {
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>About you</label>
-                            <textarea class="form-control" placeholder="Write Something"></textarea>
+                            <textarea class="form-control" placeholder={props.desc}></textarea>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>Upload Profile Pic</label>
-                            <form action="http://codeminifier.com/upload-target" class="dropzone dz-clickable profile-pic">
+                            <form action="" class="dropzone dz-clickable profile-pic">
                                 <div class="dz-default dz-message">
+                                    <input type="file" class="dz-default dz-message"/>
+
                                     <i class="fa fa-cloud-upload"></i>
                                     <span>Drop files here to upload</span>
                                 </div>
@@ -82,8 +83,10 @@ export default function ProfileSetting() {
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <label>Upload Profile Cover</label>
-                            <form action="http://codeminifier.com/upload-target" class="dropzone dz-clickable profile-cover">
+                            <form action="" class="dropzone dz-clickable profile-cover">
                                 <div class="dz-default dz-message">
+                                <input type="file" class="dz-default dz-message" />
+
                                     <i class="fa fa-cloud-upload"></i>
                                     <span>Drop files here to upload</span>
                                 </div>
