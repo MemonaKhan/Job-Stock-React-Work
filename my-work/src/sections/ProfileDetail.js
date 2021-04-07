@@ -7,40 +7,12 @@ import ProfileMessage from '../components/ProfileMessage';
 import ProfilePostJob from '../components/ProfilePostJob';
 import ProfileSetting from '../components/ProfileSetting';
 
+import ClientData from '../data/client/Data'
 
 export default function App() {
     return (
         <>
-            {/* <Router>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
-        </ul>
-
-        <hr />
-
-        
-        <Switch>
-          <Route exact path="/">
-          <h3>Home</h3>
-          </Route>
-          <Route path="/about">
-            <h3>About</h3>
-          </Route>
-          <Route path="/dashboard">
-          <h3>Dashboard</h3>
-          </Route>
-        </Switch>
-      </div>
-    </Router> */}
+          
             <Router>
                 <section className="full-detail-description full-detail gray-bg">
                     <div className="container">
@@ -59,7 +31,7 @@ export default function App() {
                                     <div className="tab-content">
                                         <Switch>
                                             <Route exact path="/employerProfile">
-                                                <ProfileAbout />
+                                                <ProfileAbout name={ClientData[0].name} desc={ClientData[0].description} />
                                             </Route>
                                             <Route path="/employerProfile/address">
                                                 <ProfileAddress />
