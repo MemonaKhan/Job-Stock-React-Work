@@ -25,7 +25,7 @@ export default function App() {
                                         <li><Link to="/employerProfile/address">Address</Link></li>
                                         <li><Link to="/employerProfile/post-job">Job Posted</Link></li>
                                         <li><Link to="/employerProfile/friends">Friends</Link></li>
-                                        <li><Link to="/employerProfile/messages">Messages <span className="info-bar">6</span></Link></li>
+                                        <li><Link to="/employerProfile/messages">Messages <span className="info-bar">{ClientData[0].messages.length}</span></Link></li>
                                         <li><Link to="/employerProfile/settings">Settings</Link></li>
                                     </ul>
                                     <div className="tab-content">
@@ -34,7 +34,7 @@ export default function App() {
                                                 <ProfileAbout name={ClientData[0].name} desc={ClientData[0].description} />
                                             </Route>
                                             <Route path="/employerProfile/address">
-                                                <ProfileAddress />
+                                                <ProfileAddress address={ClientData[0].location.Address} city={ClientData[0].location.city} state={ClientData[0].location.state} country={ClientData[0].location.country} zip={ClientData[0].location.zip} phone={ClientData[0].phone} fax={ClientData[0].fax} email={ClientData[0].email} />
                                             </Route>
                                             <Route path="/employerProfile/post-job">
                                                 <ProfilePostJob />

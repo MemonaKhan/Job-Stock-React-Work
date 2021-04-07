@@ -1,19 +1,19 @@
 import React from "react"
 
-export default function ProfileAddress() {
+export default function ProfileAddress(props) {
     return (
         <>
             <div id="address" class="tab-pane fade in active">
                 <h3>Address Info</h3>
                 <ul class="job-detail-des">
-                    <li><span>Address:</span>SCO 210, Neez Plaza</li>
-                    <li><span>City:</span>Mohali</li>
-                    <li><span>State:</span>Punjab</li>
-                    <li><span>Country:</span>India</li>
-                    <li><span>Zip:</span>520 548</li>
-                    <li><span>Telephone:</span>+91 123 456 7854</li>
-                    <li><span>Fax:</span>(622) 123 456</li>
-                    <li><span>Email:</span>youremail@gmail.com</li>
+                    <li><span>Address:</span>{props.address}</li>
+                    <li><span>City:</span>{props.city}</li>
+                    <li><span>State:</span>{props.state}</li>
+                    <li><span>Country:</span>{props.country}</li>
+                    <li><span>Zip:</span>{props.zip}</li>
+                    <li><span>Telephone:</span>{props.phone}</li>
+                    <li><span>Fax:</span>{props.fax}</li>
+                    <li><span>Email:</span>{props.email}</li>
                 </ul>
             </div>
         </>
