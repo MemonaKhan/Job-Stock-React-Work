@@ -20,6 +20,46 @@ export default function ProfilePostJob(props) {
                             address={JobsPosted[0].companyDetail.loc}
                             premium={JobsPosted[0].premium}
                             />
+                            <PostArticle
+                            img={image}
+                            // img={JobsPosted[0].image}
+                            companyName={JobsPosted[0].companyDetail.name}
+                            companyType={JobsPosted[0].companyDetail.tagline}
+                            address={JobsPosted[0].companyDetail.loc}
+                            premium={JobsPosted[0].premium}
+                            />
+                            <PostArticle
+                            img={image}
+                            // img={JobsPosted[0].image}
+                            companyName={JobsPosted[0].companyDetail.name}
+                            companyType={JobsPosted[0].companyDetail.tagline}
+                            address={JobsPosted[0].companyDetail.loc}
+                            premium={JobsPosted[0].premium}
+                            />
+                            <PostArticle
+                            img={image}
+                            // img={JobsPosted[0].image}
+                            companyName={JobsPosted[0].companyDetail.name}
+                            companyType={JobsPosted[0].companyDetail.tagline}
+                            address={JobsPosted[0].companyDetail.loc}
+                            premium={JobsPosted[0].premium}
+                            />
+                            <PostArticle
+                            img={image}
+                            // img={JobsPosted[0].image}
+                            companyName={JobsPosted[0].companyDetail.name}
+                            companyType={JobsPosted[0].companyDetail.tagline}
+                            address={JobsPosted[0].companyDetail.loc}
+                            premium={JobsPosted[0].premium}
+                            />
+                            <PostArticle
+                            img={image}
+                            // img={JobsPosted[0].image}
+                            companyName={JobsPosted[0].companyDetail.name}
+                            companyType={JobsPosted[0].companyDetail.tagline}
+                            address={JobsPosted[0].companyDetail.loc}
+                            premium={JobsPosted[0].premium}
+                            />
                         {/* })
                     } */}
 
