@@ -1,12 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import bannerImg from "../img/banner-10.jpg";
-
-import JobArticle from "../components/JobArticle"
-import Jobs from "../data/client/JobsPosted"
-
-import img from "../img/com-2.jpg";
 
 export default function SideWidget(props) {
     return (
@@ -27,7 +21,6 @@ export default function SideWidget(props) {
                                         <span class="pull-right">{val.count}</span>
                                     </li>
                                 )
-
                             })
                         }
                     </ul>
