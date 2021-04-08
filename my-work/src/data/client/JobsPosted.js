@@ -2,13 +2,14 @@ import img from '../../img/com-1.jpg'
 
 const Data = [
     {
-      jobtitle:"",
+      jobtitle:"Web Designer",
       image:{img},
       email:"",
       jobType:"",
       location:"",
       description:"",
       premium:true,
+      applied:true,
       companyDetail:{
         name:"Autodesk",
         tagline:"Software Company",
