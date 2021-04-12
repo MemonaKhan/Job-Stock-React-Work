@@ -1,5 +1,5 @@
 import React from "react"
-import PostArticle from './ProfileJobArticle'
+import PostArticle from './ProfileJobPostArticle'
 import JobsPosted from '../data/client/JobsPosted'
 
 import image from '../img/com-1.jpg'
