@@ -3,57 +3,72 @@ import MessageCard from './MessageCard'
 
 import img1 from '../img/can-1.png'
 import ClientData from '../data/client/Data'
+import ClientMsg from '../data/client/Messages'
 
 export default function ProfileMessage() {
     return (
         <>
             <div id="messages" class="tab-pane fade in active">
                 <div class="inbox-body inbox-widget">
-                    <MessageCard
-                        img={img1}
-                        sender={ClientData[0].messages[0].sender}
-                        senderemail={ClientData[0].messages[0].senderemail}
-                        recieveremail={ClientData[0].messages[0].recieveremail}
-                        day={ClientData[0].messages[0].day}
-                        time={ClientData[0].messages[0].time}
-                        read={ClientData[0].messages[0].read}
-                        message={ClientData[0].messages[0].message}
+                    {
+                        ClientMsg.map((val, key) => {
+                            return (
+                                <>
+                                <MessageCard
+                                    id={1}
+                                    img={val.messages[1].img}
+                                    sender={val.messages[1].sender}
+                                    senderemail={val.messages[1].senderemail}
+                                    recieveremail={val.messages[1].recieveremail}
+                                    day={val.messages[1].day}
+                                    time={val.messages[1].time}
+                                    read={val.messages[1].read}
+                                    message={val.messages[1].message}
 
-                    />
+                                />
+                                <MessageCard
+                                    id={2}
+                                    img={val.messages[2].img}
+                                    sender={val.messages[2].sender}
+                                    senderemail={val.messages[2].senderemail}
+                                    recieveremail={val.messages[2].recieveremail}
+                                    day={val.messages[2].day}
+                                    time={val.messages[2].time}
+                                    read={val.messages[2].read}
+                                    message={val.messages[2].message}
 
-                    <MessageCard
-                        img={img1}
-                        sender={ClientData[0].messages[0].sender}
-                        senderemail={ClientData[0].messages[0].senderemail}
-                        recieveremail={ClientData[0].messages[0].recieveremail}
-                        day={ClientData[0].messages[0].day}
-                        time={ClientData[0].messages[0].time}
-                        read={ClientData[0].messages[0].read}
-                        message={ClientData[0].messages[0].message}
+                                />
+                                <MessageCard
+                                    id={3}
+                                    img={val.messages[3].img}
+                                    sender={val.messages[3].sender}
+                                    senderemail={val.messages[3].senderemail}
+                                    recieveremail={val.messages[3].recieveremail}
+                                    day={val.messages[3].day}
+                                    time={val.messages[3].time}
+                                    read={val.messages[3].read}
+                                    message={val.messages[3].message}
 
-                    />
-                    <MessageCard
-                        img={img1}
-                        sender={ClientData[0].messages[0].sender}
-                        senderemail={ClientData[0].messages[0].senderemail}
-                        recieveremail={ClientData[0].messages[0].recieveremail}
-                        day={ClientData[0].messages[0].day}
-                        time={ClientData[0].messages[0].time}
-                        read={ClientData[0].messages[0].read}
-                        message={ClientData[0].messages[0].message}
+                                />
+                                <MessageCard
+                                    id={4}
+                                    img={val.messages[4].img}
+                                    sender={val.messages[4].sender}
+                                    senderemail={val.messages[4].senderemail}
+                                    recieveremail={val.messages[4].recieveremail}
+                                    day={val.messages[4].day}
+                                    time={val.messages[4].time}
+                                    read={val.messages[4].read}
+                                    message={val.messages[4].message}
 
-                    />
-                    <MessageCard
-                        img={img1}
-                        sender={ClientData[0].messages[0].sender}
-                        senderemail={ClientData[0].messages[0].senderemail}
-                        recieveremail={ClientData[0].messages[0].recieveremail}
-                        day={ClientData[0].messages[0].day}
-                        time={ClientData[0].messages[0].time}
-                        read={ClientData[0].messages[0].read}
-                        message={ClientData[0].messages[0].message}
+                                />
+                                </>
+                                
+                            )
+                        })
+                    }
 
-                    />
+
                 </div>
             </div>
         </>
