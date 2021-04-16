@@ -11,19 +11,19 @@ import ClientData from '../data/client/Data'
 
 // import bannerImg from "../img/";
 
-export default function App() {
+export default function App(props) {
     return (
         <>
             {/* <Banner /> */}
-            <Banner bgImg={bannerImg} title="Employer Profilee" />
+            <Banner bgImg={props.bgImg} title={props.title} />
 
             <CandidateProfile
-                img={Img}
-                name={ClientData[0].name}
-                designation={ClientData[0].designation}
-                post={ClientData[0].jobPost}
-                like={ClientData[0].Liked}
-                share={ClientData[0].jobShared} />
+                img={props.img}
+                name={props.name}
+                designation={props.designation}
+                post={props.post}
+                like={props.like}
+                share={props.share} />
         </>
     )
 }

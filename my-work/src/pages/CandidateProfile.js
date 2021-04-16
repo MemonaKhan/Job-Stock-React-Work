@@ -3,11 +3,25 @@ import {Link} from 'react-router-dom';
 
 import Profile from '../sections/Profile'
 import ProfileDetail from '../sections/CandProfileDetail'
+import ClientData from '../data/client/Data'
 
-export default function EmployerProfile() {
+import Img from "../img/can-1.png";
+import bannerImg from "../img/banner-10.jpg";
+
+
+export default function CandProfile(props) {
   return (
     <>
-    <Profile />
+    <Profile 
+    bgImg={bannerImg} title="Candidate Profilee"
+    img={Img}
+    name={ClientData[0].name}
+    designation={ClientData[0].designation}
+    post={ClientData[0].jobPost}
+    like={ClientData[0].Liked}
+    share={ClientData[0].jobShared}
+    
+    />
     <ProfileDetail />
     </>
   )
